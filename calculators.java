@@ -55,7 +55,18 @@ class arithmatic {
     public static void main(String[] args) {
         calculators z = new calculators();
         z.calci();
+        float opr1 = 11;
+        float opr2 = 13;
+        Arithmaticopr a = new Arithmaticopr();
+        double squre = a.squre(opr1);
+        System.out.println("Squre of Number  is :" + squre);
 
+        double cube = a.cube(opr1);
+        System.out.println("Cube Number is :" + cube);
+        double module = a.module(opr1, opr2);
+        System.out.println("module of  Number is :" + module);
+        double power = a.power(opr1, opr2);
+        System.out.println("Power of Number is :" + power);
     }
 
 }
