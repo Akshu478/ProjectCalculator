@@ -2,52 +2,16 @@ import java.util.Scanner;
 
 public class calculators {
 
-    void calci()
+    void calci() {
+        double num1 = 10, num2 = 20;
 
-    {
-        double num1, num2;
+        System.out.println("Num1=" + num1);
+        System.out.println("Num2=" + num2);
 
-        // Take input from the user
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the numbers:");
-
-        num1 = sc.nextDouble();
-        num2 = sc.nextDouble();
-
-        System.out.println("Enter the operator (+,-,*,/):");
-
-        char op = sc.next().charAt(0);
-        double o = 0;
-
-        switch (op) {
-
-            case '+':
-                o = num1 + num2;
-                break;
-
-            case '-':
-                o = num1 - num2;
-                break;
-
-            case '*':
-                o = num1 * num2;
-                break;
-
-            case '/':
-                o = num1 / num2;
-                break;
-
-            default:
-                System.out.println("You enter wrong input");
-        }
-
-        System.out.println("The final result:");
-        System.out.println();
-
-        System.out.println(num1 + " " + op + " " + num2
-                + " = " + o);
-
+        System.out.println("Addition=" + (num1 + num2));
+        System.out.println("Substraction=" + (num1 - num2));
+        System.out.println("Multiplication=" + (num1 * num2));
+        System.out.println("Division=" + (num1 / num2));
     }
 }
 
@@ -57,5 +21,4 @@ class arithmatic {
         z.calci();
 
     }
-
 }
